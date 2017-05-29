@@ -1,0 +1,51 @@
+F:\Iwonka\studia\przedmioty\Symulacja cyfrowa\Zadanie1\Zadanie1\bin\Debug\Zadanie1.exe.config
+F:\Iwonka\studia\przedmioty\Symulacja cyfrowa\Zadanie1\Zadanie1\obj\Debug\Zadanie1.csprojResolveAssemblyReference.cache
+F:\Iwonka\studia\przedmioty\Symulacja cyfrowa\Zadanie1\Zadanie1\bin\Debug\Zadanie1.exe
+F:\Iwonka\studia\przedmioty\Symulacja cyfrowa\Zadanie1\Zadanie1\bin\Debug\Zadanie1.pdb
+F:\Iwonka\studia\przedmioty\Symulacja cyfrowa\Zadanie1\Zadanie1\obj\Debug\Zadanie1.exe
+F:\Iwonka\studia\przedmioty\Symulacja cyfrowa\Zadanie1\Zadanie1\obj\Debug\Zadanie1.pdb
+C:\Users\TEMP.P028K9\Desktop\Zadanie2\Zadanie2\Zadanie1\bin\Debug\Zadanie1.exe.config
+C:\Users\TEMP.P028K9\Desktop\Zadanie2\Zadanie2\Zadanie1\obj\Debug\Zadanie1.exe
+C:\Users\TEMP.P028K9\Desktop\Zadanie2\Zadanie2\Zadanie1\obj\Debug\Zadanie1.pdb
+C:\Users\TEMP.P028K9\Desktop\Zadanie2\Zadanie2\Zadanie1\bin\Debug\Zadanie1.exe
+C:\Users\TEMP.P028K9\Desktop\Zadanie2\Zadanie2\Zadanie1\bin\Debug\Zadanie1.pdb
+C:\Users\TEMP.P028K9\Desktop\Zadanie2\Zadanie2\Zadanie1\obj\Debug\Zadanie1.csprojResolveAssemblyReference.cache
+C:\Users\Iwona\Desktop\symulka\Zadanie2\Zadanie2\Zadanie2\Zadanie1\bin\Debug\Zadanie1.exe.config
+C:\Users\Iwona\Desktop\symulka\Zadanie2\Zadanie2\Zadanie2\Zadanie1\obj\Debug\Zadanie1.exe
+C:\Users\Iwona\Desktop\symulka\Zadanie2\Zadanie2\Zadanie2\Zadanie1\obj\Debug\Zadanie1.pdb
+C:\Users\Iwona\Desktop\symulka\Zadanie2\Zadanie2\Zadanie2\Zadanie1\bin\Debug\Zadanie1.exe
+C:\Users\Iwona\Desktop\symulka\Zadanie2\Zadanie2\Zadanie2\Zadanie1\bin\Debug\Zadanie1.pdb
+C:\Users\Iwona\Desktop\symulka\Zadanie2\Zadanie2\Zadanie2\Zadanie1\obj\Debug\Zadanie1.csprojResolveAssemblyReference.cache
+C:\Users\Iwona\Desktop\symulka\Zadanie2\Zadanie2\Zadanie1\bin\Debug\Zadanie1.exe.config
+C:\Users\Iwona\Desktop\symulka\Zadanie2\Zadanie2\Zadanie1\obj\Debug\Zadanie1.exe
+C:\Users\Iwona\Desktop\symulka\Zadanie2\Zadanie2\Zadanie1\obj\Debug\Zadanie1.pdb
+C:\Users\Iwona\Desktop\symulka\Zadanie2\Zadanie2\Zadanie1\bin\Debug\Zadanie1.exe
+C:\Users\Iwona\Desktop\symulka\Zadanie2\Zadanie2\Zadanie1\bin\Debug\Zadanie1.pdb
+C:\Users\Iwona\Desktop\symulka\Zadanie2\Zadanie2\Zadanie1\obj\Debug\Zadanie1.csprojResolveAssemblyReference.cache
+C:\Users\Iwona\Desktop\symulka\Zadanie3_IwonaPawelek\Zadanie2\Zadanie2\Zadanie1\bin\Debug\Zadanie1.exe.config
+C:\Users\Iwona\Desktop\symulka\Zadanie3_IwonaPawelek\Zadanie2\Zadanie2\Zadanie1\obj\Debug\Zadanie1.exe
+C:\Users\Iwona\Desktop\symulka\Zadanie3_IwonaPawelek\Zadanie2\Zadanie2\Zadanie1\obj\Debug\Zadanie1.pdb
+C:\Users\Iwona\Desktop\symulka\Zadanie3_IwonaPawelek\Zadanie2\Zadanie2\Zadanie1\bin\Debug\Zadanie1.exe
+C:\Users\Iwona\Desktop\symulka\Zadanie3_IwonaPawelek\Zadanie2\Zadanie2\Zadanie1\bin\Debug\Zadanie1.pdb
+C:\Users\Iwona\Desktop\symulka\Zadanie3_IwonaPawelek\Zadanie2\Zadanie2\Zadanie1\obj\Debug\Zadanie1.csprojResolveAssemblyReference.cache
+C:\Users\Iwona\Desktop\symulka\Zadanie3_IwonaPawelek\Zadanie4_IwonaPawelek\Zadanie2\Zadanie1\bin\Debug\Zadanie1.exe.config
+C:\Users\Iwona\Desktop\symulka\Zadanie3_IwonaPawelek\Zadanie4_IwonaPawelek\Zadanie2\Zadanie1\obj\Debug\Zadanie1.exe
+C:\Users\Iwona\Desktop\symulka\Zadanie3_IwonaPawelek\Zadanie4_IwonaPawelek\Zadanie2\Zadanie1\obj\Debug\Zadanie1.pdb
+C:\Users\Iwona\Desktop\symulka\Zadanie3_IwonaPawelek\Zadanie4_IwonaPawelek\Zadanie2\Zadanie1\bin\Debug\Zadanie1.exe
+C:\Users\Iwona\Desktop\symulka\Zadanie3_IwonaPawelek\Zadanie4_IwonaPawelek\Zadanie2\Zadanie1\bin\Debug\Zadanie1.pdb
+C:\Users\Iwona\Desktop\symulka\Zadanie3_IwonaPawelek\Zadanie4_IwonaPawelek\Zadanie2\Zadanie1\obj\Debug\Zadanie1.csprojResolveAssemblyReference.cache
+C:\Users\Iwona\Desktop\symulka\Zadanie3_IwonaPawelek\Zadanie1\bin\Debug\Zadanie1.exe.config
+C:\Users\Iwona\Desktop\symulka\Zadanie3_IwonaPawelek\Zadanie1\obj\Debug\Zadanie1.exe
+C:\Users\Iwona\Desktop\symulka\Zadanie3_IwonaPawelek\Zadanie1\obj\Debug\Zadanie1.pdb
+C:\Users\Iwona\Desktop\symulka\Zadanie3_IwonaPawelek\Zadanie1\bin\Debug\Zadanie1.exe
+C:\Users\Iwona\Desktop\symulka\Zadanie3_IwonaPawelek\Zadanie1\bin\Debug\Zadanie1.pdb
+C:\Users\Iwona\Desktop\symulka\Zadanie3_IwonaPawelek\Zadanie1\obj\Debug\Zadanie1.csprojResolveAssemblyReference.cache
+C:\Users\Iwona\Desktop\symulka\Symulacja\Zadanie1\bin\Debug\Zadanie1.exe.config
+C:\Users\Iwona\Desktop\symulka\Symulacja\Zadanie1\obj\Debug\Zadanie1.exe
+C:\Users\Iwona\Desktop\symulka\Symulacja\Zadanie1\obj\Debug\Zadanie1.pdb
+C:\Users\Iwona\Desktop\symulka\Symulacja\Zadanie1\bin\Debug\Zadanie1.exe
+C:\Users\Iwona\Desktop\symulka\Symulacja\Zadanie1\bin\Debug\Zadanie1.pdb
+C:\Users\Iwona\Desktop\symulka\Symulacja\Zadanie1\obj\Debug\Zadanie1.csprojResolveAssemblyReference.cache
+C:\Users\Iwona\Desktop\Symulacja_Iwona_Pawelek\Symulacja\Zadanie1\bin\Debug\Zadanie1.exe.config
+C:\Users\Iwona\Desktop\Symulacja_Iwona_Pawelek\Symulacja\Zadanie1\obj\Debug\Zadanie1.exe
+C:\Users\Iwona\Desktop\Symulacja_Iwona_Pawelek\Symulacja\Zadanie1\obj\Debug\Zadanie1.pdb
