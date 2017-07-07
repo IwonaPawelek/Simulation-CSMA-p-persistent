@@ -49,3 +49,6 @@ C:\Users\Iwona\Desktop\symulka\Symulacja\Zadanie1\obj\Debug\Zadanie1.csprojResol
 C:\Users\Iwona\Desktop\Symulacja_Iwona_Pawelek\Symulacja\Zadanie1\bin\Debug\Zadanie1.exe.config
 C:\Users\Iwona\Desktop\Symulacja_Iwona_Pawelek\Symulacja\Zadanie1\obj\Debug\Zadanie1.exe
 C:\Users\Iwona\Desktop\Symulacja_Iwona_Pawelek\Symulacja\Zadanie1\obj\Debug\Zadanie1.pdb
+C:\Users\Iwona\Desktop\test\Symulacja_Iwona_Pawelek\Symulacja\Zadanie1\bin\Debug\Zadanie1.exe.config
+C:\Users\Iwona\Desktop\test\Symulacja_Iwona_Pawelek\Symulacja\Zadanie1\obj\Debug\Zadanie1.exe
+C:\Users\Iwona\Desktop\test\Symulacja_Iwona_Pawelek\Symulacja\Zadanie1\obj\Debug\Zadanie1.pdb

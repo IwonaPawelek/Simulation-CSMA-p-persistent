@@ -65,7 +65,7 @@ namespace Zadanie1
                         //dodanie istniejacego do buforu
                         Siec.DodajDoNadawczej(this);
                         CzasPojawienia = Program.zegar;
-                        if(Program.logi) Console.WriteLine("Pakiet id {0} aktywuje kolejny pakiet, liczba pakietow w stacji nadawczej {1}, czas {2}", this.Id, Siec.SprawdzBufor(this), Program.zegar);
+                        if(Program.logiOnOff) Console.WriteLine("Pakiet id {0} aktywuje kolejny pakiet, liczba pakietow w stacji nadawczej {1}, czas {2}", this.Id, Siec.SprawdzBufor(this), Program.zegar);
                         _faza = 1;
                         
                         break;
@@ -75,7 +75,7 @@ namespace Zadanie1
                     case 1:
                         if (Siec.PierwszyPakiet(this)==this)
                         {
-                            if (Program.logi) Console.WriteLine("Pakiet id {0} jest pierwszy w nadajniku, czas {1}", this.Id, Program.zegar);
+                            if (Program.logiOnOff) Console.WriteLine("Pakiet id {0} jest pierwszy w nadajniku, czas {1}", this.Id, Program.zegar);
                             CzasNadania = Program.zegar;
                             Statystyka.SrednieOczekiwanie.Add(CzasNadania - CzasPojawienia); 
                             _faza = 2;
@@ -86,10 +86,10 @@ namespace Zadanie1
                     //Faza 2 - nasluchuje kanal co 0.5ms, jezeli kanal
                     //jest wolny to przechodzi do fazy 3
                     case 2:
-                        if(Program.logi) Console.WriteLine("Pakiet id {0} sprawdza stan kanalu, czas {1}", this.Id, Program.zegar);
+                        if(Program.logiOnOff) Console.WriteLine("Pakiet id {0} sprawdza stan kanalu, czas {1}", this.Id, Program.zegar);
                         if (!Lacze.KanalWolny)
                             {
-                                if (Program.logi) Console.WriteLine("Pakiet id {0} oczekuje na zwolnienie kanalu co 0.5ms, czas {1}", this.Id, Program.zegar);
+                                if (Program.logiOnOff) Console.WriteLine("Pakiet id {0} oczekuje na zwolnienie kanalu co 0.5ms, czas {1}", this.Id, Program.zegar);
                                 this.Activate(0.5);
                                 active = false;
                             }
@@ -100,7 +100,7 @@ namespace Zadanie1
                     case 3:
                         if (Siec.PT() <= Program.PT)
                         {
-                            if (Program.logi) Console.WriteLine("Pakiet id {0} ma p-stw mniejsze od 0.6 rozpoczyna transmisje, czas {1}", this.Id, Program.zegar);
+                            if (Program.logiOnOff) Console.WriteLine("Pakiet id {0} ma p-stw mniejsze od 0.6 rozpoczyna transmisje, czas {1}", this.Id, Program.zegar);
                             _faza = 5;
                         }
                         else
@@ -108,14 +108,14 @@ namespace Zadanie1
                             //wait a slot
                             if (Program.zegar % 1 == 0) //czeka 1ms do szczeliny
                             {
-                                if (Program.logi) Console.WriteLine("Pakiet id {0} ma p-stwo wieksze niz 0.6 wiec oczekuje do szczeliny, czas {1}", this.Id, Program.zegar);
+                                if (Program.logiOnOff) Console.WriteLine("Pakiet id {0} ma p-stwo wieksze niz 0.6 wiec oczekuje do szczeliny, czas {1}", this.Id, Program.zegar);
                                 _faza = 4;
                                 this.Activate(1.0);
                                 active = false;
                             }
                             else
                             {
-                                if (Program.logi) Console.WriteLine("Pakiet id {0} ma p-stwo wieksze niz 0.6 wiec oczekuje do szczeliny, czas {1}", this.Id, Program.zegar);
+                                if (Program.logiOnOff) Console.WriteLine("Pakiet id {0} ma p-stwo wieksze niz 0.6 wiec oczekuje do szczeliny, czas {1}", this.Id, Program.zegar);
                                 _faza = 4;
                                 this.Activate(1 - (Program.zegar % 1)); //odczekuje do szczeliny
                                 active = false;
@@ -126,14 +126,14 @@ namespace Zadanie1
                     case 4:
                         if (!Lacze.KanalWolny)
                         {
-                            if (Program.logi) Console.WriteLine("Pakiet id {0} sprawdza czy kanal jest wolny 1ms i wraca do odpytywania co 0.5ms, czas {1}", this.Id, Program.zegar);
+                            if (Program.logiOnOff) Console.WriteLine("Pakiet id {0} sprawdza czy kanal jest wolny 1ms i wraca do odpytywania co 0.5ms, czas {1}", this.Id, Program.zegar);
                             _faza = 2; //wraca do odpytywania co 0.5ms
                             this.Activate(1.0);
                             active = false;
                         }
                         else
                         {
-                            if (Program.logi) Console.WriteLine("Pakiet id {0} wraca do losowania liczby, czas {1}", this.Id, Program.zegar);
+                            if (Program.logiOnOff) Console.WriteLine("Pakiet id {0} wraca do losowania liczby, czas {1}", this.Id, Program.zegar);
                             _faza = 3;
                         }
                         break;
@@ -143,10 +143,10 @@ namespace Zadanie1
                     case 5:
                         if (Program.zegar % 1 == 0)
                         {
-                            if (Program.logi) Console.WriteLine("Pakiet id {0} rozpoczal transmisje w pelnej szczelinie, czas {1}. Planowany czas transmisji {2}", this.Id, Program.zegar,this.CzasCTPk);
+                            if (Program.logiOnOff) Console.WriteLine("Pakiet id {0} rozpoczal transmisje w pelnej szczelinie, czas {1}. Planowany czas transmisji {2}", this.Id, Program.zegar,this.CzasCTPk);
                             if (Lacze.Kolizja())
                             {
-                                if (Program.logi) Console.WriteLine("Pakiet id {0} wykryl kolizje, czas {1}", this.Id, Program.zegar);
+                                if (Program.logiOnOff) Console.WriteLine("Pakiet id {0} wykryl kolizje, czas {1}", this.Id, Program.zegar);
                                 Lacze.UstawFlagiKolizji();
                                 this.FlagaKolizji = true;
                             }
@@ -158,14 +158,14 @@ namespace Zadanie1
                         }
                         else //jesli nie to odczekaj czas do następnej szczeliny i ponownie sprawdz czy kolizja
                         {
-                            if (Program.logi) Console.WriteLine("Pakiet id {0} czeka na poczatek szczeliny, czas {1}", this.Id, Program.zegar);
+                            if (Program.logiOnOff) Console.WriteLine("Pakiet id {0} czeka na poczatek szczeliny, czas {1}", this.Id, Program.zegar);
                             this.Activate((1-(Program.zegar % 1)));
                             active = false;
                         }
                         break;
                     //Faza 6 - transmisja
                     case 6:
-                        if (Program.logi) Console.WriteLine("Pakiet id {0} zajal kanal, czas {1}", this.Id, Program.zegar);
+                        if (Program.logiOnOff) Console.WriteLine("Pakiet id {0} zajal kanal, czas {1}", this.Id, Program.zegar);
                         Lacze.KanalWolny = false;
                         _faza = 8;
                         this.Activate(CzasCTPk);
@@ -174,7 +174,7 @@ namespace Zadanie1
 
                     //Faza 7 - retransmisja
                     case 7:
-                        if (Program.logi) Console.WriteLine("Pakiet id {0} rozpoczyna retransmisje, czas {1}", this.Id, Program.zegar);
+                        if (Program.logiOnOff) Console.WriteLine("Pakiet id {0} rozpoczyna retransmisje, czas {1}", this.Id, Program.zegar);
                         ++this.LiczbaRetransmisji;
                         if(this.LiczbaRetransmisji <Program.liczbaRetransmisji)
                         {
@@ -187,7 +187,7 @@ namespace Zadanie1
                         else
                         {
                             //usuwa pakiet z systemu
-                            if (Program.logi) Console.WriteLine("Przekroczono LR wiec usuwam pakiet z systemu");
+                            if (Program.logiOnOff) Console.WriteLine("Przekroczono LR wiec usuwam pakiet z systemu");
                             Siec.StraconePakiety(this);
                             Siec.UsunZNadawczej(this);
                             if (Siec.SprawdzBufor(this) != 0) Siec.PierwszyPakiet(this).Activate(0.0);
@@ -200,7 +200,7 @@ namespace Zadanie1
                         if(this.FlagaKolizji)
                         {
                             Console.BackgroundColor = ConsoleColor.Red;
-                            if (Program.logi) Console.WriteLine("Pakiet id {0} wystaplia kolizja, czas {1}", this.Id, Program.zegar);
+                            if (Program.logiOnOff) Console.WriteLine("Pakiet id {0} wystaplia kolizja, czas {1}", this.Id, Program.zegar);
                             Console.ResetColor();
                             Lacze.UsunZKanalu(this);
                             if(!Lacze.Kolizja()) Lacze.KanalWolny = true;
@@ -236,7 +236,7 @@ namespace Zadanie1
                         if (Siec.SprawdzBufor(this) != 0) Siec.PierwszyPakiet(this).Activate(0.0);
                         active = false;
                         Console.BackgroundColor = ConsoleColor.DarkGreen;
-                        if (Program.logi) Console.WriteLine("Pakiet id {0} zapisal sie w stacji odbiorczej, czas {1}", this.Id, Program.zegar);
+                        if (Program.logiOnOff) Console.WriteLine("Pakiet id {0} zapisal sie w stacji odbiorczej, czas {1}", this.Id, Program.zegar);
                         Console.ResetColor();
                         break;
                     default:

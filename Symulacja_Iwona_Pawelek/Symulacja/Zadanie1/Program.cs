@@ -21,7 +21,7 @@ namespace Zadanie1
         public static double PT = 0.6;
         public static int liczbaRetransmisji = 5; //15
         public static int fazaPoczatkowa = 12;
-        public static bool logi = false;
+        public static bool logiOnOff = false;
         public static bool symulacjaKrokowa = false;
         #endregion
 
@@ -38,10 +38,10 @@ namespace Zadanie1
             switch (zmiennaLogi)
             {
                 case 0:
-                    Program.logi = false;
+                    Program.logiOnOff = false;
                     break;
                 case 1:
-                    Program.logi = true;
+                    Program.logiOnOff = true;
                     break;
                 default:
                     Console.WriteLine("Podano nieoczekiwana liczbe");
